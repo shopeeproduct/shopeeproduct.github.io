@@ -56,21 +56,22 @@
         .harga h2 {
             color: rgb(182, 0, 0);
             font-family: sans-serif;
-            font-size: 1.1rem;
+            font-size: 1rem;
             letter-spacing: -1px;
             padding-top: 8px;
         }
         .harga h1 {
             font-family: sans-serif;
             color: rgb(182, 0, 0);
-            font-size: 2rem;
-            margin-left: -5px;
+            font-size: 1.4rem;
+            margin-left: 2px;
         }
         .harga h3 {
             font-family: sans-serif;
             padding-top: 10px;
             padding-left: 10px;
             font-weight: 400;
+            font-size: 1rem;
             text-decoration: line-through;
             color: rgba(131, 131, 131, 0.886);
         }
@@ -93,7 +94,7 @@
             font-weight: 400;
             margin-right: 8px;
             font-size: 0.7rem;
-            padding:1px 5px;
+            padding:3px 5px;
             border: 1px solid rgb(182, 0, 0);
         }
         .kotak h6 {
@@ -181,21 +182,22 @@
             padding-top: 15px;
             position: fixed;
             border-bottom: 1px solid rgb(203, 203, 203);
-            padding-bottom: 15px;
-            background-color: white;
+            bottom: 0;
+            background-color: rgb(255, 255, 255);
             width: 100%;
         }
         .image {
-            display: flex;
             align-items: center;
         }
         .image img {
             width: 50px;
-            margin: 0 25px;
+            margin: 0 30px;
         }
-         .krnjng {
-            padding-bottom: 15px;
-            padding-right: 6px;
+        .image2 img {
+            width: 50px;
+            align-items: center;
+            margin-top: -22px;
+            margin-left: 30px;
         }
         .harga3 button{
             position: fixed;
@@ -203,15 +205,14 @@
             font-family: sans-serif;
             color: white;
             padding: 10px;
+            height: 50px;
+            width: 40%;
             text-align: center;
             border: none;
-            background-color: rgb(214, 69, 2);
+            background-color: rgb(214, 41, 2);
         }
         .harga3 p {
             font-size: 0.8rem;
-        }
-        .harga3 h1 {
-            font-size: 1rem;
         }
     </style>
     
@@ -262,13 +263,15 @@
     <footer>
         <div class="image">
             <img src="img/chat.png" alt="">
+            </div>
             <h1>|</h1>
-            <img class="krnjng" src="img/keranjang.png" alt="">
+            <div class="image2">
+            <img src="img/keranjang.png" alt="">
         </div>
         <div class="harga3">
             <button onclick="window.location.href = 'login/index.html'">
-            <p>Beli Dengan Voucher</p>
-            <h1>Rp2.300.000</h1>
+            <p>Beli Sekarang</p>
+            <h4>Rp2.300.000</h5>
         </button>
         </div>
     </footer>
