@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopee</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            width: 100%;
+        }
+        .arrow {
+            float: left;
+        }
+        .shop {
+            float: right;
+        }
+        .share {
+            float: right;
+        }
+        .menu {
+            float: right;
+        }
+        header i {
+            background-color: rgba(0, 0, 0, 0.46);
+            color: white;
+            z-index: 999;
+            position: relative;
+            font-size: 1.3rem;
+            padding: 8px;
+            margin:15px 5px;
+            border-radius: 20px;
+        }
+        header .fa-ellipsis-vertical {
+            padding: 5px 16px;
+            margin-right: 10px;
+        }
+        section img {
+            margin-bottom: 10px;
+            margin-top: -220px;
+            width: 100%;
+            border-bottom: 1px solid;
+        }
+        aside {
+            margin: 0 10px;
+        }
+        .harga {
+            display: flex;
+        }
+        .harga h2 {
+            color: rgb(182, 0, 0);
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: -1px;
+            padding-top: 8px;
+        }
+        .harga h1 {
+            font-family: sans-serif;
+            color: rgb(182, 0, 0);
+            font-size: 2rem;
+            margin-left: -5px;
+        }
+        .harga h3 {
+            font-family: sans-serif;
+            padding-top: 10px;
+            padding-left: 10px;
+            font-weight: 400;
+            text-decoration: line-through;
+            color: rgba(131, 131, 131, 0.886);
+        }
+        .harga2 p {
+            font-size: 0.9rem;
+            font-family: sans-serif;
+        }
+        .harga2 span {
+            font-weight: 800;
+        }
+        .kotak {
+            margin-top: 15px;
+            display: flex;
+            margin-bottom: 15px;
+
+        }
+        .kotak p {
+            font-family: sans-serif;
+            color:  rgb(182, 0, 0);
+            font-weight: 400;
+            margin-right: 8px;
+            font-size: 0.7rem;
+            padding:1px 5px;
+            border: 1px solid rgb(182, 0, 0);
+        }
+        .kotak h6 {
+            background-color: rgb(214, 115, 2);
+            padding: 3px 5px;
+            font-size: 0.7rem;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .kotak span {
+            background-color: transparent;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            padding-top: 3px;
+            padding-left: 2px;
+            padding-right: 2px;
+            border: 1px solid rgb(214, 115, 2);
+            color: rgb(214, 115, 2);
+        }
+        .mall {
+            display: flex;
+        }
+        .mall h1 {
+            background-color: rgb(182, 0, 0);
+            color: white;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-top: 3px;
+            border-radius: 3px;
+            padding-top: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            height: 20px;
+        }
+        .mall span {
+            font-weight: 800;
+        }
+        .mall h2 {
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            padding-left: 10px;
+            font-weight: 400;
+            color: rgb(31, 31, 31);
+        }
+        .shield {
+            border-top: 1px solid rgb(203, 203, 203);
+            margin-top: 20px;
+            display: flex;
+            padding-top: 15px;
+            align-items: center;
+        }
+        .shield img {
+            width: 25px;
+            margin-left: 15px;
+        }
+        .shield p {
+            font-family: sans-serif;
+            margin-left: 3px;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        .paylater {
+            border-top: 1px solid rgb(203, 203, 203);
+            margin-top: 15px;
+            display: flex;
+            padding-top: 15px;
+            align-items: center;
+            padding-bottom: 15px ;
+            border-bottom: 1px solid rgb(203, 203, 203);
+        }
+        .paylater img {
+            width: 25px;
+            margin-left: 15px;
+        }
+        .paylater p {
+            font-family: sans-serif;
+            margin-left: 3px;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        footer {
+            display: flex;
+            height: 50px;
+            padding-top: 15px;
+            position: fixed;
+            border-bottom: 1px solid rgb(203, 203, 203);
+            padding-bottom: 15px;
+            background-color: white;
+            width: 100%;
+        }
+        .image {
+            display: flex;
+            align-items: center;
+        }
+        .image img {
+            width: 50px;
+            margin: 0 25px;
+        }
+         .krnjng {
+            padding-bottom: 15px;
+            padding-right: 6px;
+        }
+        .harga3 button{
+            position: fixed;
+            right: 0;
+            font-family: sans-serif;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            background-color: rgb(214, 69, 2);
+        }
+        .harga3 p {
+            font-size: 0.8rem;
+        }
+        .harga3 h1 {
+            font-size: 1rem;
+        }
+    </style>
+    
+    <header> 
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+        <div class="shop">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="share">
+            <i class="fa-solid fa-share"></i>
+        </div>
+    </header>
+    <section>
+        <img src="img/poto.jpg" alt="">
+    </section>
+    <aside>
+        <div class="harga">
+            <h2>Rp</h2>
+            <h1>2.300.000</h1>
+            <h3>Rp5.289.000</h3>
+        </div>
+        <div class="harga2">
+            <p>Rp2.300.000 x 1 bulan dengan <span>SPayLater ></span></p>
+        </div>
+        <div class="kotak">
+            <p>Hadiah Gratis</p>
+            <h6>Cicilan Murah</h6> 
+            <span>0%</span>
+        </div>
+        <div class="mall">
+            <h1>Mall|<span>ORI</span></h1>
+            <h2>Canon Eos M10</h2>
+        </div>
+    </aside>
+    <div class="shield">
+        <img src="img/shield.png" alt="">
+        <p>15 Hari Pengembalian • 100% Original</p>
+    </div>
+    <div class="paylater">
+        <img src="img/paylater.png" alt="">
+        <p>SpayLater: Diskon 100%</p>
+    </div>
+    <footer>
+        <div class="image">
+            <img src="img/chat.png" alt="">
+            <h1>|</h1>
+            <img class="krnjng" src="img/keranjang.png" alt="">
+        </div>
+        <div class="harga3">
+            <button onclick="window.location.href = 'login/index.html'">
+            <p>Beli Dengan Voucher</p>
+            <h1>Rp2.300.000</h1>
+        </button>
+        </div>
+    </footer>
+</body>
+</html>
